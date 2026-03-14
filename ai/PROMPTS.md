@@ -1,14 +1,10 @@
-You are a senior Django developer.
+Create Django management command scan_folder.
 
-Implement Album model with nested albums.
+Behavior:
+- read directory
+- create albums from folders
+- create media entries for files
+- skip duplicates
 
-Fields:
-- title
-- slug
-- parent (self FK)
-- public
-- created_at
-
-Output:
->>> albums/models.py
->>> albums/tests/test_models.py
+Command example:
+python manage.py scan_folder /media/import
